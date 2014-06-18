@@ -21,7 +21,10 @@
 
   <remote  name="slim"
            fetch="git://github.com/SlimRoms"
-           review="https://gerrit.slimroms.net/"/>
+           review="https://gerrit.slimroms.net/" />
+          
+  <remote  name="vanir"
+           fetch="git://github.com/VanirAOSP" />
 
   <default revision="refs/tags/android-4.4.3_r1.1"
            remote="aosp"
@@ -454,8 +457,9 @@
   <!-- LiquidSmooth -->
   <project path="art" name="android_art" remote="ls" revision="kitkat" />
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="ls" revision="kitkat" />
+  <!-- VanirAOSP -->
+  <project path="bionic" name="bionic" remote="vanir" revision="kk44" />
   <!-- BerserkAOSP -->
-  <project path="bionic" name="bionic" remote="berserk" revision="berserk" />
   <project path="build" name="build" remote="berserk" revision="berserk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
