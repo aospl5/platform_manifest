@@ -352,6 +352,51 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  
+   <!-- BerserkAOSP -->
+  <project path="build" name="build" remote="berserk" revision="berserk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="development" name="android_development" remote="berserk" revision="berserk" />
+  <project path="external/sepolicy" name="external_sepolicy" remote="berserk" revision="berserk" />
+  <project path="frameworks/av" name="frameworks_av" remote="berserk" revision="berserk" />
+  <project path="frameworks/base" name="frameworks_base" remote="berserk" revision="berserk" />
+  <project path="frameworks/native" name="frameworks_native" remote="berserk" revision="berserk" />
+  <project path="packages/apps/Apollo" name="packages_apps_Apollo" remote="berserk" revision="berserk" />
+  <project path="packages/apps/Browser" name="packages_apps_Browser" remote="berserk" revision="berserk" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="berserk" revision="berserk" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="berserk" revision="berserk" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="berserk" revision="berserk" />
+  <project path="platform_manifest" name="platform_manifest" remote="berserk" revision="berserk" />
+  <project path="system/core" name="android_system_core" remote="berserk" revision="berserk" />
+  <project path="vendor/berserk" name="vendor_berserk" remote="berserk" revision="berserk" />
+  
+  <!-- CM -->
+  <project path="external/android-visualizer" name="android_external_android-visualizer" remote="cm" revision="cm-11.0" />
+  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="cm" revision="cm-11.0" />
+  <project path="external/koush/Widgets" name="Widgets" remote="cm" revision="cm-11.0" />
+  <project path="external/google" name="android_external_google" remote="cm" revision="cm-11.0" />
+  <project path="external/llvm" name="android_external_llvm" remote="cm" revision="cm-11.0" />
+  <project path="external/openssl" name="android_external_openssl" remote="cm" revision="cm-11.0" />
+  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="cm" revision="cm-11.0" />
+  <project path="hardware/cm" name="android_hardware_cm" remote="cm" revision="cm-11.0" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" revision="cm-11.0" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cm" revision="cm-11.0" />
+  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="cm" revision="cm-11.0" />
+  <project path="hardware/qcom/display-caf-new" name="android_hardware_qcom_display-caf-new" remote="cm" revision="cm-11.0" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="cm" revision="cm-11.0" />
+  <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="cm" revision="cm-11.0" />
+  <project path="hardware/qcom/media-caf-new" name="android_hardware_qcom_media-caf-new" remote="cm" revision="cm-11.0" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" revision="cm-11.0" />
+  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="cm" revision="cm-11.0" />
+  <project path="packages/apps/SamsungServiceMode" name="android_packages_apps_SamsungServiceMode" remote="cm" revision="cm-11.0" />
+  <project path="system/extras" name="android_system_extras" remote="cm" revision="cm-11.0" />
+  <project path="system/media" name="android_system_media" remote="cm" revision="cm-11.0" />
+  
+  <!-- LiquidSmooth -->
+  <project path="art" name="android_art" remote="ls" revision="kitkat" />
+  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="ls" revision="kitkat" />
+  
   <!-- SlimRoms -->
   <project path="bootable/recovery" name="bootable_recovery" remote="slim" revision="kk4.4" />
   <project path="dalvik" name="android_dalvik" remote="slim" revision="kk4.4" />
@@ -424,6 +469,7 @@
   <project path="prebuilt" name="android_prebuilt" remote="slim" revision="kk4.4" />
   <project path="system/netd" name="android_system_netd" remote="slim" revision="kk4.4" /> 
   <project path="system/vold" name="android_system_vold" remote="slim" revision="kk4.4" />
+  
   <!-- SlimRoms CAF -->
   <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" remote="slim" revision="kk4.4-caf" />
   <project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="slim" revision="kk4.4-caf" />
@@ -434,48 +480,9 @@
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="slim" revision="kk4.4-caf" />
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="slim" revision="kk4.4-caf" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="slim" revision="kk4.4-caf" />
-  <!-- CM -->
-  <project path="external/android-visualizer" name="android_external_android-visualizer" remote="cm" revision="cm-11.0" />
-  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="cm" revision="cm-11.0" />
-  <project path="external/koush/Widgets" name="Widgets" remote="cm" revision="cm-11.0" />
-  <project path="external/google" name="android_external_google" remote="cm" revision="cm-11.0" />
-  <project path="external/llvm" name="android_external_llvm" remote="cm" revision="cm-11.0" />
-  <project path="external/openssl" name="android_external_openssl" remote="cm" revision="cm-11.0" />
-  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="cm" revision="cm-11.0" />
-  <project path="hardware/cm" name="android_hardware_cm" remote="cm" revision="cm-11.0" />
-  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" revision="cm-11.0" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cm" revision="cm-11.0" />
-  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="cm" revision="cm-11.0" />
-  <project path="hardware/qcom/display-caf-new" name="android_hardware_qcom_display-caf-new" remote="cm" revision="cm-11.0" />
-  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="cm" revision="cm-11.0" />
-  <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="cm" revision="cm-11.0" />
-  <project path="hardware/qcom/media-caf-new" name="android_hardware_qcom_media-caf-new" remote="cm" revision="cm-11.0" />
-  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" revision="cm-11.0" />
-  <project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" remote="cm" revision="cm-11.0" />
-  <project path="packages/apps/SamsungServiceMode" name="android_packages_apps_SamsungServiceMode" remote="cm" revision="cm-11.0" />
-  <project path="system/extras" name="android_system_extras" remote="cm" revision="cm-11.0" />
-  <project path="system/media" name="android_system_media" remote="cm" revision="cm-11.0" />
-  <!-- LiquidSmooth -->
-  <project path="art" name="android_art" remote="ls" revision="kitkat" />
-  <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="ls" revision="kitkat" />
+  
   <!-- VanirAOSP -->
   <project path="bionic" name="bionic" remote="vanir" revision="kk44" />
-  <!-- BerserkAOSP -->
-  <project path="build" name="build" remote="berserk" revision="berserk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-  <project path="development" name="android_development" remote="berserk" revision="berserk" />
-  <project path="external/sepolicy" name="external_sepolicy" remote="berserk" revision="berserk" />
-  <project path="frameworks/av" name="frameworks_av" remote="berserk" revision="berserk" />
-  <project path="frameworks/base" name="frameworks_base" remote="berserk" revision="berserk" />
-  <project path="frameworks/native" name="frameworks_native" remote="berserk" revision="berserk" />
-  <project path="packages/apps/Apollo" name="packages_apps_Apollo" remote="berserk" revision="berserk" />
-  <project path="packages/apps/Browser" name="packages_apps_Browser" remote="berserk" revision="berserk" />
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="berserk" revision="berserk" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="berserk" revision="berserk" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="berserk" revision="berserk" />
-  <project path="platform_manifest" name="platform_manifest" remote="berserk" revision="berserk" />
-  <project path="system/core" name="android_system_core" remote="berserk" revision="berserk" />
-  <project path="vendor/berserk" name="vendor_berserk" remote="berserk" revision="berserk" />
+ 
 
 </manifest>
