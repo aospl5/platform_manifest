@@ -1,4 +1,4 @@
-BERSERK 
+BERSERK 4 L5
 =======
 
 
@@ -11,7 +11,7 @@ To get started with BerserkAOSP, you'll need to get familiar with
 
 To initialize your local repository using our trees, use this command:
 
-	repo init -u git://github.com/berserkaosp/platform_manifest.git -b berserk
+	repo init -u git://github.com/aospl5/platform_manifest.git -b berserk
 
 
 Then sync up with this command:
