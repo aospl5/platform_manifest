@@ -28,6 +28,9 @@
            
   <remote name="THLG"
           fetch="git://github.com/TeamHackLG/" />
+        
+  <remote name="aospl5"
+          fetch="git://github.com/aospl5/" />
           
   <remote  name="vanir"
            fetch="git://github.com/VanirAOSP" />
@@ -493,7 +496,7 @@
   <!-- E610 -->
    <project path="vendor/lge" name="proprietary_vendor_lge" revision="cm-11.0" remote="THLG"/>
   <project path="device/lge/e610" name="android_device_lge_e610" revision="berserk" remote="aospl5"/>
-  <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="cm-11.0" remote="THLG"/>
+  <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="berserk" remote="aospl5"/>
   <project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk" remote="THLG"/>
 
 </manifest>
